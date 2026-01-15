@@ -27,8 +27,7 @@ const Experts: React.FC = () => {
             <img 
               src="dr-arciero.jpg" 
               alt="Dr. Paul Arciero" 
-              style={{ background: '#eee' }} 
-              margin-top= '20px'
+              style={{ marginTop: '20px' }}
             />
             <h3>Dr. Paul Arciero</h3>
             <p>PhD Exercise Physiology<br />Professor, Skidmore College</p>
