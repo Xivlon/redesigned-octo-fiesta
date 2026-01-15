@@ -269,10 +269,14 @@ img {
 }
 
 .price-card img { 
+    width: 150px; 
+    height: 170px; 
+    border-radius: 20px; 
+    object-fit: cover; 
     margin: 0 auto 20px auto; 
-    max-height: 200px; 
-    object-fit: contain;
-    transition: transform 0.3s ease;
+    border: 4px solid var(--accent);
+    box-shadow: 0 5px 20px rgba(39, 174, 96, 0.3);
+    transition: all 0.3s ease;
 }
 
 .price-card:hover img {
