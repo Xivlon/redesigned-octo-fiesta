@@ -30,7 +30,7 @@ const Experts: React.FC = () => {
             <h3>Dr. Paul Arciero</h3>
             <p>PhD Exercise Physiology<br />Professor, Skidmore College</p>
             <a 
-              href="https://vimeo.com/725104566/d8efd2144b" 
+              href="https://paularciero.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               style={{ color: 'var(--accent)', fontSize: '0.9em' }}
