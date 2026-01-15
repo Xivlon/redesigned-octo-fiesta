@@ -23,6 +23,8 @@ const PriceCard: React.FC<PriceCardProps> = ({
   isBestValue,
   onSelect,
 }) => {
+  return (
+    <div>
       <img src={imageSrc} alt={imageAlt} />
       <h3>{title}</h3>
       <div className="price">
@@ -86,6 +88,7 @@ const Pricing: React.FC = () => {
               'Premium Snacks & Adaptogens',
               'Free Shipping',
             ]}
+            onSelect={handleSelectPremium}
           />
         </div>
       </div>
