@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Hero from './components/Hero';
 import Comparison from './components/Comparison';
 import Story from './components/Story';
@@ -10,7 +10,7 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
-  const [selectedPack, setSelectedPack] = useState<string | null>(null);
+  const [selectedPack, setSelectedPack] = useState<string | undefined>(undefined);
 
   return (
     <> 
