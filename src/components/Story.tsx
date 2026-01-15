@@ -18,7 +18,7 @@ const Story: React.FC = () => {
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, [galleryImages.length]);
+  }, []);
 
   return (
     <section className="story">
@@ -40,39 +40,20 @@ const Story: React.FC = () => {
             </p>
           </div>
           <div className="story-img">
-            <div style={{
-              border: '3px solid #27ae60',
-              borderRadius: '12px',
-              padding: '10px',
-              background: '#fff'
-            }}>
+            <div className="story-slideshow-container">
               <img 
                 src={galleryImages[currentImageIndex]} 
                 alt="Transformation Results and X-Ray of Spinal Injury" 
-                style={{ background: '#eee', minHeight: '300px' }} 
               />
-              <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                gap: '8px',
-                marginTop: '15px',
-                paddingBottom: '5px'
-              }}>
+              <div className="story-nav-dots">
                 {galleryImages.map((_, index) => (
                   <div
                     key={index}
+                    className={`story-nav-dot ${index === currentImageIndex ? 'active' : ''}`}
                     role="button"
                     tabIndex={0}
                     aria-label={`Go to slide ${index + 1}`}
                     aria-current={index === currentImageIndex || undefined}
-                    style={{
-                      width: '10px',
-                      height: '10px',
-                      borderRadius: '50%',
-                      background: index === currentImageIndex ? '#27ae60' : '#ccc',
-                      transition: 'background 0.3s ease',
-                      cursor: 'pointer'
-                    }}
                     onClick={() => setCurrentImageIndex(index)}
                     onKeyDown={(e) => {
                       if (e.key === 'Enter' || e.key === 'Space') {

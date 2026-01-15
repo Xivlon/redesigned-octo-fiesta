@@ -219,14 +219,44 @@ img {
     align-items: start; 
 }
 
+.story-slideshow-container {
+    border: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 10px;
+    background: var(--white);
+}
+
 .story-img img { 
     width: 100%; 
     border-radius: 12px; 
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    background: #eee;
+    min-height: 300px;
 }
 
 .story-img img:hover {
     transform: scale(1.02);
+}
+
+.story-nav-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+.story-nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.story-nav-dot.active {
+    background: var(--accent);
 }
 
 .quote { 
