@@ -96,8 +96,6 @@ const Pricing: React.FC = () => {
             onSelect={handleSelectBasic}
           />
           <PriceCard
-            isBestValue
-            onSelect={handleSelectPremium}
             imageSrc="/IMG_2286.jpeg" 
             imageAlt="Premium Reset Pack"
             title="Premium Reset Pack"    
