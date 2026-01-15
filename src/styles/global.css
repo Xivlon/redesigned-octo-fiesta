@@ -191,8 +191,8 @@ img {
 .welcome-widget {
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding: 30px;
+    gap: 16px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.08);
     border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 24px;
@@ -201,13 +201,13 @@ img {
     left: 30px;
     z-index: 10;
     backdrop-filter: blur(10px);
-    max-width: 500px;
-    animation: fadeInUp 1.6s ease-out;
+    max-width: 400px;
+    animation: slideInFromLeft 1.6s ease-out;
 }
 
 .welcome-pfp {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent);
@@ -222,7 +222,7 @@ img {
 
 .welcome-text-box p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2px;
 }
@@ -231,8 +231,8 @@ img {
     .welcome-widget {
         flex-direction: column;
         text-align: center;
-        gap: 16px;
-        padding: 20px;
+        gap: 12px;
+        padding: 16px;
         top: 20px;
         left: 20px;
         max-width: calc(100% - 40px);
@@ -243,14 +243,29 @@ img {
     }
 
     .welcome-pfp {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .hero .btn {
         animation: fadeInUp 1.4s ease-out;
+    }
+
+    .welcome-widget {
+        animation: none;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
