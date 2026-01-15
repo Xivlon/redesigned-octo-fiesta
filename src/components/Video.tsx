@@ -4,7 +4,7 @@ const Video: React.FC = () => {
   return (
     <section className="video-section">
       <div className="container">
-        <h2>A brief Intoduction to the R2M Protocol</h2>
+        <h2>A Brief Intoduction</h2>
         <div className="video-container">
           <video 
             controls 
