@@ -10,4 +10,6 @@ export type InterestOption =
   | 'Weight Loss'
   | 'Nutritional Protocol Details'
   | 'Menopause Support'
-  | 'General Questions';
+  | 'General Questions'
+  | 'Basic Wellness Pack'
+  | 'Premium Reset Pack';
