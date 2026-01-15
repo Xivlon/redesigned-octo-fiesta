@@ -88,6 +88,13 @@
             box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
         }
         
+        .btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+        
         .btn:hover:before {
             left: 100%;
         }
@@ -145,8 +152,19 @@
             animation: fadeInUp 1.2s ease-out;
         }
         
+        @media (prefers-reduced-motion: no-preference) {
+            .hero .btn {
+                animation: fadeInUp 1.4s ease-out, pulse 2s ease-in-out infinite;
+            }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .hero .btn {
+                animation: fadeInUp 1.4s ease-out;
+            }
+        }
+        
         .hero .btn {
-            animation: fadeInUp 1.4s ease-out, pulse 2s ease-in-out infinite;
             position: relative;
             z-index: 1;
         }
@@ -191,6 +209,7 @@
             font-size: 2em;
             color: var(--accent);
             opacity: 0.2;
+            aria-hidden: true;
         }
         
         .comp-card.synthetic { 
@@ -349,8 +368,7 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             width: 60px;
             height: 3px;
             background: var(--gradient-2);
@@ -495,7 +513,7 @@
             <div class="video-container">
                 <!-- Replace transformation-video.mp4 with your actual video file path -->
                 <!-- Optionally add video-thumbnail.jpg as a poster image -->
-                <video controls poster="video-thumbnail.jpg">
+                <video controls poster="video-thumbnail.jpg" preload="metadata" aria-label="Video explaining the science and real transformations behind the R2M Protocol">
                     <source src="transformation-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
