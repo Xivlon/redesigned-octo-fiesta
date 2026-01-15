@@ -20,6 +20,8 @@ const Experts: React.FC = () => {
               rel="noopener noreferrer"
               style={{ color: 'var(--accent)', fontSize: '0.9em' }}
             >
+              Follow The Green Law Report
+            </a>
           </div>
           <div className="expert-card">
             <img 
@@ -35,7 +37,7 @@ const Experts: React.FC = () => {
               rel="noopener noreferrer"
               style={{ color: 'var(--accent)', fontSize: '0.9em' }}
             >
-              Watch Clinical Study Video &rarr;
+              Read His Work
             </a>
           </div>
         </div>
