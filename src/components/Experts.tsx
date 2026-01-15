@@ -4,7 +4,7 @@ const Experts: React.FC = () => {
   return (
     <section className="experts">
       <div className="container">
-        <h2 style={{ textAlign: 'center' }}>Backed by Science & Leadership</h2>
+        <h2 style={{ textAlign: 'center' }}>Backed Activists in The Field</h2>
         <div className="experts-grid">
           <div className="expert-card">
             <img 
