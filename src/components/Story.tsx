@@ -4,7 +4,8 @@ const galleryImages = [
   '/gallery/transform.png',
   '/gallery/spine.png',
   '/gallery/spine2.png',
-  '/gallery/Screenshot 2026-01-15 at 17-36-47 My Landing Page.pdf.png'
+  '/gallery/Screenshot 2026-01-15 at 17-36-47 My Landing Page.pdf.png',
+  '/gallery/Web_Photo_Editor.jpg'
 ];
 
 const Story: React.FC = () => {
