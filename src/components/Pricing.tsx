@@ -81,6 +81,8 @@ const Pricing: React.FC = () => {
         </p>
         <div className="pricing-grid">
           <PriceCard
+            imageSrc="/IMG_2286.jpeg"
+            imageAlt="Basic Wellness Pack"
             title="Basic Wellness Pack"
             originalPrice={222}
             currentPrice={167}
@@ -94,6 +96,8 @@ const Pricing: React.FC = () => {
             onSelect={handleSelectBasic}
           />
           <PriceCard
+            imageSrc="/IMG_2287.jpeg"
+            imageAlt="Premium Reset Pack"
             title="Premium Reset Pack"    
             originalPrice={439}
             currentPrice={330}
