@@ -10,12 +10,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <> 
       <Hero />
+      <Video />
       <Comparison />
       <Story />
       <HowItWorks />
-      <Video />
       <Pricing />
       <Experts />
       <ContactForm />
