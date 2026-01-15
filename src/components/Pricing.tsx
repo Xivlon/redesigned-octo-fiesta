@@ -96,7 +96,7 @@ const Pricing: React.FC = () => {
             onSelect={handleSelectBasic}
           />
           <PriceCard
-            imageSrc="/IMG_2286.jpeg" style={{ zIndex: 0, position: 'relative' }}
+            imageSrc="/IMG_2286.jpeg" 
             imageAlt="Premium Reset Pack"
             title="Premium Reset Pack"    
             originalPrice={439}
