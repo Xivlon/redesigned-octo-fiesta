@@ -7,14 +7,20 @@ const interestOptions: InterestOption[] = [
   'Nutritional Protocol Details',
   'Menopause Support',
   'General Questions',
+  'Basic Wellness Pack',
+  'Premium Reset Pack',
 ];
 
-const ContactForm: React.FC = () => {
+interface ContactFormProps {
+  selectedPack?: string;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
     phone: '',
-    interest: 'Weight Loss',
+    interest: selectedPack || 'Weight Loss',
     message: '',
   });
 
@@ -37,16 +43,23 @@ const ContactForm: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      // TODO: Integrate with Resend API
-      // This is where the Resend service integration will be implemented
-      // For now, we'll just log the data
-      
-      const response = await fetch('/api/contact', {
+      const apiKey = import.meta.env.VITE_RESEND_API_KEY;
+      const fromEmail = 'noreply@yourdomain.com'; // Replace with your verified Resend domain
+      const toEmail = 'thedeltorolife@gmail.com';
+
+      const response = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
+          'Authorization': `Bearer ${apiKey}`,
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          from: fromEmail,
+          to: toEmail,
+          reply_to: formData.email,
+          subject: `Contact Form Submission: ${formData.interest}`,
+          html: `<p><strong>Name:</strong> ${formData.name}</p>\n<p><strong>Email:</strong> ${formData.email}</p>\n<p><strong>Phone:</strong> ${formData.phone || 'Not provided'}</p>\n<p><strong>Interest:</strong> ${formData.interest}</p>\n<p><strong>Message:</strong></p><p>${formData.message.replace(/\n/g, '<br>')}</p>`,
+        }),
       });
 
       if (response.ok) {
