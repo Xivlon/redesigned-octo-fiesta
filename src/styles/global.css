@@ -272,24 +272,47 @@ img {
 }
 
 .benefit-card {
-    background: linear-gradient(180deg, #ffffff 0%, #f5fbf8 100%);
     padding: 28px;
     border-radius: 20px;
-    border: 2px solid rgba(39, 174, 96, 0.15);
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow:
         0 -1px 0 rgba(255, 255, 255, 0.5) inset,
         0 0 0 1px rgba(0, 0, 0, 0.08),
         0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.benefit-card:nth-child(1) {
+    background: linear-gradient(180deg, #e8f8f1 0%, #d0f0e3 100%);
+}
+
+.benefit-card:nth-child(2) {
+    background: linear-gradient(180deg, #d4ebf7 0%, #b8ddf0 100%);
+}
+
+.benefit-card:nth-child(3) {
+    background: linear-gradient(180deg, #e0f5eb 0%, #c5ead8 100%);
+}
+
+.benefit-card:nth-child(4) {
+    background: linear-gradient(180deg, #cfe7f7 0%, #b0d5f0 100%);
+}
+
+.benefit-card:nth-child(5) {
+    background: linear-gradient(180deg, #e5f3f0 0%, #cbead7 100%);
+}
+
+.benefit-card:nth-child(6) {
+    background: linear-gradient(180deg, #d9e9f5 0%, #bcd7eb 100%);
 }
 
 .benefit-card:hover {
     transform: translateY(-6px);
-    border-color: var(--accent);
+    border-color: rgba(39, 174, 96, 0.4);
     box-shadow:
-        0 -1px 0 rgba(255, 255, 255, 0.6) inset,
-        0 0 0 1px rgba(39, 174, 96, 0.2),
-        0 12px 30px rgba(39, 174, 96, 0.15);
+        0 -1px 0 rgba(255, 255, 255, 0.7) inset,
+        0 0 0 2px rgba(39, 174, 96, 0.3),
+        0 12px 30px rgba(39, 174, 96, 0.2);
 }
 
 .benefit-card h4 {

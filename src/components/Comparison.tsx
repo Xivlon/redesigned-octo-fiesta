@@ -30,7 +30,7 @@ const Comparison: React.FC = () => {
         </div>
 
         <div className="benefits-section">
-          <h3 className="benefits-heading">Exploring The Advantages Of</h3>
+          <h3 className="benefits-heading">Exploring The Advantages</h3>
           <div className="benefits-grid">
             <div className="benefit-card">
               <h4>Trimming Body Fat</h4>

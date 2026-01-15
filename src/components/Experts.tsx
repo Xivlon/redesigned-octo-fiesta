@@ -52,7 +52,7 @@ const Experts: React.FC = () => {
               className="video-link"
             >
               <span className="video-icon">▶</span>
-              <span className="video-text">Watch Expert Interview 1</span>
+              <span className="video-text">Dr. Arciero's Peer-Reviewed Study on Fat Adaptation</span>
             </a>
             <a
               href="https://vimeo.com/725104566/d8efd2144b"
@@ -61,7 +61,7 @@ const Experts: React.FC = () => {
               className="video-link"
             >
               <span className="video-icon">▶</span>
-              <span className="video-text">Watch Expert Interview 2</span>
+              <span className="video-text">Rapid Weight Loss is Safe - No Muscle Loss Study</span>
             </a>
           </div>
         </div>
