@@ -39,15 +39,15 @@ const PriceCard: React.FC<PriceCardProps> = ({
   );
 };
 
-const Pricing: React.FC = () => {
+const Pricing: React.FC<{setSelectedPack: (pack: string) => void}> = ({setSelectedPack}) => {
   const handleSelectBasic = () => {
-    // TODO: Implement order processing
-    alert('Basic Wellness Pack selected. Order processing to be implemented.');
+    setSelectedPack('Basic Wellness Pack');
+    document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
   };
 
   const handleSelectPremium = () => {
-    // TODO: Implement order processing
-    alert('Premium Reset Pack selected. Order processing to be implemented.');
+    setSelectedPack('Premium Reset Pack');
+    document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'});
   };
 
   return (
