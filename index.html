@@ -16,9 +16,10 @@
         
         /* Layout Utilities */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .btn { display: inline-block; background: var(--accent); color: var(--white); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn { display: inline-block; background: var(--accent); color: var(--white); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; text-align: center;}
         .btn:hover { background: #219150; }
         section { padding: 60px 0; }
+        img { max-width: 100%; height: auto; display: block; }
         
         /* Hero Section */
         .hero { background: var(--primary); color: var(--white); text-align: center; padding: 80px 20px; }
@@ -33,16 +34,22 @@
         .comp-card.synthetic { border-top: 5px solid #c0392b; opacity: 0.8; }
         
         /* The Story */
-        .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-        .story-img img { width: 100%; border-radius: 8px; }
+        .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+        .story-img img { width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
         .quote { font-style: italic; font-size: 1.1em; color: #555; border-left: 4px solid var(--accent); padding-left: 20px; margin: 20px 0; }
 
         /* The Pricing */
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; }
-        .price-card { border: 1px solid #ddd; padding: 30px; border-radius: 10px; }
+        .price-card { border: 1px solid #ddd; padding: 30px; border-radius: 10px; display: flex; flex-direction: column; height: 100%;}
+        .price-card img { margin: 0 auto 20px auto; max-height: 200px; object-fit: contain; }
         .price-card h3 { color: var(--primary); }
         .price { font-size: 2em; color: var(--accent); font-weight: bold; }
         .price span { text-decoration: line-through; color: #999; font-size: 0.6em; }
+        
+        /* Experts */
+        .experts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 40px; }
+        .expert-card { text-align: center; }
+        .expert-card img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px auto; border: 3px solid var(--light); }
         
         /* Disclaimer */
         .disclaimer { background: #222; color: #777; font-size: 0.8rem; padding: 40px 0; text-align: center; }
@@ -104,7 +111,7 @@
                     <p><strong>Start:</strong> Dec 1, 2025 | <strong>Current:</strong> Dec 31, 2025</p>
                 </div>
                 <div class="story-img">
-                    <img src="path-to-your-image.jpg" alt="Transformation Results" style="background:#eee; height: 300px; object-fit: cover;">
+                    <img src="transformation.jpg" alt="Transformation Results and X-Ray of Spinal Injury" style="background:#eee; min-height: 300px; display: flex; align-items: center; justify-content: center; color: #888;">
                 </div>
             </div>
         </div>
@@ -136,7 +143,10 @@
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 40px;">Choose Your Wellness Pack</h2>
             <div class="pricing-grid">
+                
                 <div class="price-card" style="background: white;">
+                    <img src="1000053939.jpg" alt="Basic Wellness Pack containing Isalean Shakes and Cleanse">
+                    
                     <h3>Basic Wellness Pack</h3>
                     <div class="price"><span>$222</span> $167</div>
                     <p>Perfect for getting started.</p>
@@ -152,6 +162,8 @@
                 <div class="price-card" style="background: white; border: 2px solid var(--accent); position: relative;">
                     <div style="background: var(--accent); color: white; position: absolute; top: 0; left: 0; width: 100%; padding: 5px 0; border-radius: 8px 8px 0 0;">Best Value</div>
                     <br>
+                    <img src="1000053937.jpg" alt="Premium Reset Pack containing full supply of Shakes, Cleanse, and Snacks">
+                    
                     <h3>Premium Reset Pack</h3>
                     <div class="price"><span>$439</span> $330</div>
                     <p>The complete transformation kit.</p>
@@ -165,6 +177,25 @@
                 </div>
             </div>
             <p style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #666;">*Prices reflect Subscription Rewards pricing.</p>
+        </div>
+    </section>
+
+    <section class="experts">
+        <div class="container">
+            <h2 style="text-align: center;">Backed by Science & Leadership</h2>
+            <div class="experts-grid">
+                <div class="expert-card">
+                    <img src="peter-greenlaw.jpg" alt="Peter Greenlaw" style="background:#eee;">
+                    <h3>Peter Greenlaw</h3>
+                    <p>Co-Founder & Creator<br>Transformation Coach & Nutrition Educator</p>
+                </div>
+                <div class="expert-card">
+                    <img src="dr-arciero.jpg" alt="Dr. Paul Arciero" style="background:#eee;">
+                    <h3>Dr. Paul Arciero</h3>
+                    <p>PhD Exercise Physiology<br>Professor, Skidmore College</p>
+                    <a href="https://vimeo.com/725104566/d8efd2144b" target="_blank" style="color: var(--accent); font-size: 0.9em;">Watch Clinical Study Video &rarr;</a>
+                </div>
+            </div>
         </div>
     </section>
 
