@@ -6,7 +6,7 @@ const Video: React.FC = () => {
         <div className="video-container">
           <video 
             controls 
-            poster="video-thumbnail.jpg" 
+            poster="/video-thumbnail.jpg" 
             preload="none" 
             aria-label="A brief Introduction to the R2M Protocol"
           >
