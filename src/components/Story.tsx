@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+const galleryImages = [
+  '/gallery/transform.png',
+  '/gallery/spine.png',
+  '/gallery/spine2.png',
+  '/gallery/Screenshot 2026-01-15 at 17-36-47 My Landing Page.pdf.png'
+];
 
 const Story: React.FC = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % galleryImages.length
+      );
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="story">
       <div className="container">
@@ -21,11 +40,31 @@ const Story: React.FC = () => {
             </p>
           </div>
           <div className="story-img">
-            <img 
-              src="transformation.jpg" 
-              alt="Transformation Results and X-Ray of Spinal Injury" 
-              style={{ background: '#eee', minHeight: '300px' }} 
-            />
+            <div className="story-slideshow-container">
+              <img 
+                src={galleryImages[currentImageIndex]} 
+                alt="Transformation Results and X-Ray of Spinal Injury" 
+              />
+              <div className="story-nav-dots">
+                {galleryImages.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`story-nav-dot ${index === currentImageIndex ? 'active' : ''}`}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Go to slide ${index + 1}`}
+                    aria-current={index === currentImageIndex || undefined}
+                    onClick={() => setCurrentImageIndex(index)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === 'Space') {
+                        e.preventDefault();
+                        setCurrentImageIndex(index);
+                      }
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
