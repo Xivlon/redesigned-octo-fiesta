@@ -26,7 +26,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
   return (
     <div 
       className="price-card" 
-      style={isBestValue ? { border: '5px solid var(--accent)', position: 'relative' } : {}}
+      style={isBestValue ? { border: '5px solid var(--accent)', position: 'relative', zIndex: 10 } : {}}
     >
       {isBestValue && (
         <>
