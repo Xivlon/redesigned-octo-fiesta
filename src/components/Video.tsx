@@ -11,7 +11,7 @@ const Video: React.FC = () => {
             controls 
             poster="video-thumbnail.jpg" 
             preload="metadata" 
-            aria-label="Video explaining the science and real transformations behind the R2M Protocol"
+            aria-label="A brief Intoduction to the R2M Protocol"
           >
             <source src="https://pub-4140993c3b6c43a3aaf2d64bbc6d4309.r2.dev" />
             Your browser does not support the video tag.
