@@ -35,15 +35,6 @@
             }
         }
         
-        @keyframes shimmer {
-            0% {
-                background-position: -1000px 0;
-            }
-            100% {
-                background-position: 1000px 0;
-            }
-        }
-        
         body { 
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
             line-height: 1.6; 
@@ -285,7 +276,7 @@
         .price span { 
             text-decoration: line-through; 
             color: #999; 
-            font-size: 0.5em; 
+            font-size: 0.6em; 
         }
         
         /* Experts */
@@ -327,7 +318,7 @@
         }
         
         input:focus, select:focus, textarea:focus {
-            outline: none;
+            outline: 2px solid var(--accent);
             border-color: var(--accent) !important;
             box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
             transform: translateY(-2px);
