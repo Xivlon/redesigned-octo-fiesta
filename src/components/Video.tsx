@@ -13,7 +13,7 @@ const Video: React.FC = () => {
             preload="metadata" 
             aria-label="Video explaining the science and real transformations behind the R2M Protocol"
           >
-            <source src="transformation-video.mp4" type="video/mp4" />
+            <source src="https://pub-4140993c3b6c43a3aaf2d64bbc6d4309.r2.dev" />
             Your browser does not support the video tag.
           </video>
         </div>
