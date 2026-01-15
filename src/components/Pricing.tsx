@@ -23,28 +23,6 @@ const PriceCard: React.FC<PriceCardProps> = ({
   isBestValue,
   onSelect,
 }) => {
-  return (
-    <div 
-      className="price-card" 
-      style={isBestValue ? { border: '3px solid var(--accent)', position: 'relative', zIndex: 10 } : {}}
-    >
-      {isBestValue && (
-        <>
-          <div style={{ 
-            background: 'var(--accent)', 
-            color: 'white', 
-            position: 'absolute', 
-            top: 0, 
-            left: 0, 
-            width: '100%', 
-            padding: '5px 0', 
-            borderRadius: '8px 8px 0 0' 
-          }}>
-            Best Value
-          </div>
-          <br />
-        </>
-      )}
       <img src={imageSrc} alt={imageAlt} />
       <h3>{title}</h3>
       <div className="price">
