@@ -75,7 +75,7 @@ const Story: React.FC = () => {
                     }}
                     onClick={() => setCurrentImageIndex(index)}
                     onKeyDown={(e) => {
-                      if (e.key === 'Enter' || e.key === ' ') {
+                      if (e.key === 'Enter' || e.key === 'Space') {
                         e.preventDefault();
                         setCurrentImageIndex(index);
                       }
