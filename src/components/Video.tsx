@@ -5,7 +5,7 @@ const Video: React.FC = () => {
     <section className="video-section">
       <div className="container">
         <h2>See the Transformation</h2>
-        <p>Watch this video to learn more about the science behind the R2M Protocol and real transformation stories.</p>
+        <p>A brief Intoduction to the R2M Protocol"</p>
         <div className="video-container">
           <video 
             controls 
