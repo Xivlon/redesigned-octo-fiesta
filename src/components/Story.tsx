@@ -25,7 +25,7 @@ const Story: React.FC = () => {
       <div className="container">
         <div className="story-grid">
           <div className="story-text">
-            <h2>I Came for the Weight Loss. I Stayed for the Vitality.</h2>
+            <h2>Came for the Weight Loss-Stayed for the Vitality</h2>
             <p>
               Fifteen years ago, a severe spinal injury changed my daily life. My C-3 through C-6 vertebrae compressed into my spine, resulting in severe nerve damage and chronic pain. After an eight-hour surgery and months of rehabilitation, I had to relearn how to walk. For over a decade, my "normal" involved constant discomfort and high blood pressure that hovered around 140/90.
             </p>
