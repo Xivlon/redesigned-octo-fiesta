@@ -302,7 +302,7 @@ img {
 }
 
 .price-card img { 
-    width: 200px; 
+    width: 200px;
     height: 170px; 
     border-radius: 20px; 
     object-fit: cover; 
@@ -310,6 +310,7 @@ img {
     border: 4px solid var(--accent);
     box-shadow: 0 5px 20px rgba(39, 174, 96, 0.3);
     transition: all 0.3s ease;
+    zIndex: 0;
 }
 
 .price-card:hover img {
