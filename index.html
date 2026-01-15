@@ -152,6 +152,11 @@
             animation: fadeInUp 1.2s ease-out;
         }
         
+        .hero .btn {
+            position: relative;
+            z-index: 1;
+        }
+        
         @media (prefers-reduced-motion: no-preference) {
             .hero .btn {
                 animation: fadeInUp 1.4s ease-out, pulse 2s ease-in-out infinite;
@@ -162,11 +167,6 @@
             .hero .btn {
                 animation: fadeInUp 1.4s ease-out;
             }
-        }
-        
-        .hero .btn {
-            position: relative;
-            z-index: 1;
         }
         
         /* The Comparison (Anti-GLP-1) */
@@ -209,7 +209,6 @@
             font-size: 2em;
             color: var(--accent);
             opacity: 0.2;
-            aria-hidden: true;
         }
         
         .comp-card.synthetic { 
