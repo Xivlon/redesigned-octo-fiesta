@@ -64,7 +64,7 @@ const Story: React.FC = () => {
                     role="button"
                     tabIndex={0}
                     aria-label={`Go to slide ${index + 1}`}
-                    aria-current={index === currentImageIndex ? 'true' : 'false'}
+                    aria-current={index === currentImageIndex || undefined}
                     style={{
                       width: '10px',
                       height: '10px',
