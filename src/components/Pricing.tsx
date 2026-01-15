@@ -26,7 +26,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
   return (
     <div 
       className="price-card" 
-      style={isBestValue ? { border: '2px solid var(--accent)', position: 'relative' } : {}}
+      style={isBestValue ? { border: '5px solid var(--accent)', position: 'relative' } : {}}
     >
       {isBestValue && (
         <>
@@ -75,14 +75,12 @@ const Pricing: React.FC = () => {
   return (
     <section className="pricing" style={{ background: '#f4f4f4' }}>
       <div className="container">
-        <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>Choose Your Wellness Pack</h2>
-        <p style={{ textAlign: 'center', marginBottom: '40px', color: '#666' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>Take The First Step On Your Wellness Journey</h2>
+        <p style={{ textAlign: 'center', marginBottom: '80px', color: '#666' }}>
           *Prices reflect Subscription Rewards pricing.
         </p>
         <div className="pricing-grid">
           <PriceCard
-            imageSrc="1000053939.jpg"
-            imageAlt="Basic Wellness Pack containing Isalean Shakes and Cleanse"
             title="Basic Wellness Pack"
             originalPrice={222}
             currentPrice={167}
@@ -96,9 +94,7 @@ const Pricing: React.FC = () => {
             onSelect={handleSelectBasic}
           />
           <PriceCard
-            imageSrc="1000053937.jpg"
-            imageAlt="Premium Reset Pack containing full supply of Shakes, Cleanse, and Snacks"
-            title="Premium Reset Pack"
+            title="Premium Reset Pack"    
             originalPrice={439}
             currentPrice={330}
             description="The complete transformation kit."
