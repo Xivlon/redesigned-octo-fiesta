@@ -76,7 +76,7 @@ const Pricing: React.FC = () => {
     <section className="pricing" style={{ background: '#f4f4f4' }}>
       <div className="container">
         <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>Take The First Step On Your Wellness Journey</h2>
-        <p style={{ textAlign: 'center', marginBottom: '80px', color: '#666' }}>
+        <p style={{ textAlign: 'center', marginBottom: '50px', color: '#666' }}>
           *Prices reflect Subscription Rewards pricing.
         </p>
         <div className="pricing-grid">
@@ -96,6 +96,8 @@ const Pricing: React.FC = () => {
             onSelect={handleSelectBasic}
           />
           <PriceCard
+            isBestValue
+            onSelect={handleSelectPremium}
             imageSrc="/IMG_2286.jpeg" 
             imageAlt="Premium Reset Pack"
             title="Premium Reset Pack"    
@@ -108,8 +110,6 @@ const Pricing: React.FC = () => {
               'Premium Snacks & Adaptogens',
               'Free Shipping',
             ]}
-            isBestValue
-            onSelect={handleSelectPremium}
           />
         </div>
       </div>
