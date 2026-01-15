@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Video: React.FC = () => {
   return (
     <section className="video-section">
@@ -6,9 +8,8 @@ const Video: React.FC = () => {
         <div className="video-container">
           <video 
             controls 
-            poster="/video-thumbnail.jpg" 
-            preload="metadata" 
-            crossOrigin="anonymous"
+            poster="video-thumbnail.jpg" 
+            preload="none" 
             aria-label="A brief Introduction to the R2M Protocol"
           >
             <source src="https://r2mwillfixyourhealth.com/are_you_toxic_(1080p).mp4" type="video/mp4" />
