@@ -190,6 +190,7 @@ img {
 /* Welcome Widget */
 .welcome-widget {
     display: flex;
+    align-items: center;
     gap: 16px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.08);
@@ -244,12 +245,6 @@ img {
     .welcome-pfp {
         width: 60px;
         height: 60px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .welcome-widget {
-        animation: none;
     }
 }
 
