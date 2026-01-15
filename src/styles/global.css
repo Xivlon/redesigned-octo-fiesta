@@ -249,6 +249,92 @@ img {
     opacity: 0.2;
 }
 
+/* Benefits Section */
+.benefits-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid rgba(39, 174, 96, 0.15);
+}
+
+.benefits-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--primary);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.benefit-card {
+    background: linear-gradient(180deg, #ffffff 0%, #f5fbf8 100%);
+    padding: 28px;
+    border-radius: 20px;
+    border: 2px solid rgba(39, 174, 96, 0.15);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow:
+        0 -1px 0 rgba(255, 255, 255, 0.5) inset,
+        0 0 0 1px rgba(0, 0, 0, 0.08),
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow:
+        0 -1px 0 rgba(255, 255, 255, 0.6) inset,
+        0 0 0 1px rgba(39, 174, 96, 0.2),
+        0 12px 30px rgba(39, 174, 96, 0.15);
+}
+
+.benefit-card h4 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+.benefit-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.benefits-footer {
+    text-align: center;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background: var(--gradient-2);
+    color: var(--white);
+    padding: 16px 48px;
+    text-decoration: none;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.12),
+        0 4px 16px rgba(39, 174, 96, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        0 8px 24px rgba(39, 174, 96, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
 .comp-card.synthetic { 
     border-top: 5px solid #c0392b;
     opacity: 0.85;
