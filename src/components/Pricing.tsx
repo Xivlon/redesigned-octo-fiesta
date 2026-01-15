@@ -8,7 +8,6 @@ interface PriceCardProps {
   currentPrice: number;
   description: string;
   features: string[];
-  isBestValue?: boolean;
   onSelect: () => void;
 }
 
@@ -20,7 +19,6 @@ const PriceCard: React.FC<PriceCardProps> = ({
   currentPrice,
   description,
   features,
-  isBestValue,
   onSelect,
 }) => {
   return (
