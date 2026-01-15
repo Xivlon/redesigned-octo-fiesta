@@ -269,7 +269,7 @@ img {
 }
 
 .price-card img { 
-    width: 150px; 
+    width: 200px; 
     height: 170px; 
     border-radius: 20px; 
     object-fit: cover; 
