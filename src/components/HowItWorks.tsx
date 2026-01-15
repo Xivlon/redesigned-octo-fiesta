@@ -10,7 +10,7 @@ const HowItWorks: React.FC = () => {
         </p>
         <br />
         <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
-          <div style={{ flex: 1, minWidth: '250px', padding: '20px' }}>
+          <div style={{ flex: 1, minWidth: '250px', padding: '20px', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', backgroundColor: '#fafafa', margin: '10px' }}>
             <h3>Daily Nutrition</h3>
             <ul style={{ textAlign: 'left' }}>
               <li>Replace your breakfast with a nutrient-dense amino acid and enzyme shake.</li>
@@ -18,7 +18,7 @@ const HowItWorks: React.FC = () => {
               <li>This routine provides consistent, targeted nutrition without the need for constant food tracking.</li>
             </ul>
           </div>
-          <div style={{ flex: 1, minWidth: '250px', padding: '20px' }}>
+          <div style={{ flex: 1, minWidth: '250px', padding: '20px', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', backgroundColor: '#fafafa', margin: '10px' }}>
             <h3>Nutritional Fasting & Support</h3>
             <ul style={{ textAlign: 'left' }}>
               <li>Two consecutive days a month, we provide the body with a period of metabolic rest.</li>
@@ -26,7 +26,7 @@ const HowItWorks: React.FC = () => {
               <li>This helps maintain nutrient levels while the body's natural systems work to restore balance.</li>
             </ul>
           </div>
-          <div style={{ flex: 1, minWidth: '250px', padding: '20px' }}>
+          <div style={{ flex: 1, minWidth: '250px', padding: '20px', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)', backgroundColor: '#fafafa', margin: '10px' }}>
             <h3>Adaptation</h3>
             <ul style={{ textAlign: 'left' }}>
               <li>The R2M Protocol helps the body function with more efficiency and less inflammation.</li>
