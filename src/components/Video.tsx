@@ -4,8 +4,7 @@ const Video: React.FC = () => {
   return (
     <section className="video-section">
       <div className="container">
-        <h2>See the Transformation</h2>
-        <p>A brief Intoduction to the R2M Protocol"</p>
+        <h2>A brief Intoduction to the R2M Protocol</h2>
         <div className="video-container">
           <video 
             controls 
@@ -13,7 +12,7 @@ const Video: React.FC = () => {
             preload="metadata" 
             aria-label="A brief Intoduction to the R2M Protocol"
           >
-            <source src="https://pub-4140993c3b6c43a3aaf2d64bbc6d4309.r2.dev" type="video/mp4" />
+            <source src="https://pub-4140993c3b6c43a3aaf2d64bbc6d4309.r2.dev/are_you_toxic_%20(1080p).mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
