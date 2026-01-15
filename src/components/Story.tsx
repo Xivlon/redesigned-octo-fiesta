@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Story: React.FC = () => {
+  const galleryImages = [
+    '/gallery/transform.png',
+    '/gallery/spine.png',
+    '/gallery/spine2.png',
+    '/gallery/Screenshot 2026-01-15 at 17-36-47 My Landing Page.pdf.png'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % galleryImages.length
+      );
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [galleryImages.length]);
+
   return (
     <section className="story">
       <div className="container">
@@ -22,7 +41,7 @@ const Story: React.FC = () => {
           </div>
           <div className="story-img">
             <img 
-              src="transformation.jpg" 
+              src={galleryImages[currentImageIndex]} 
               alt="Transformation Results and X-Ray of Spinal Injury" 
               style={{ background: '#eee', minHeight: '300px' }} 
             />
