@@ -4,8 +4,8 @@ const Comparison: React.FC = () => {
   return (
     <section className="comparison">
       <div className="container">
-        <h2 style={{ textAlign: 'center' }}>Help Your Body When It Needs It Most</h2>
-        <p style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
+        <h2 className="section-title">Help Your Body When It Needs It Most</h2>
+        <p className="section-subtitle">
           Most weight loss plans focus on what you have to give up. This approach focuses on giving your body the targeted nutrition it has been missing.
         </p>
         

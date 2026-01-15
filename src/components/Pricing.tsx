@@ -29,7 +29,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
         <span>${originalPrice}</span> ${currentPrice}
       </div>
       <p>{description}</p>
-      <ul style={{ textAlign: 'left', margin: '20px 0' }}>
+      <ul className="price-card-features">
         {features.map((feature, index) => (
           <li key={index}>{feature}</li>
         ))}
@@ -51,10 +51,10 @@ const Pricing: React.FC<{setSelectedPack: (pack: string) => void}> = ({setSelect
   };
 
   return (
-    <section className="pricing" style={{ background: '#f4f4f4' }}>
+    <section className="pricing">
       <div className="container">
-        <h2 style={{ textAlign: 'center', marginBottom: '40px' }}>Take The First Step On Your Wellness Journey</h2>
-        <p style={{ textAlign: 'center', marginBottom: '50px', color: '#666' }}>
+        <h2 className="pricing-title">Take The First Step On Your Wellness Journey</h2>
+        <p className="pricing-subtitle">
           *Prices reflect Subscription Rewards pricing.
         </p>
         <div className="pricing-grid">

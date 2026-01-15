@@ -83,13 +83,13 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
   };
 
   return (
-    <section id="contact">
-      <div className="container" style={{ maxWidth: '600px' }}>
-        <h2 style={{ textAlign: 'center' }}>Curious? Let's Chat.</h2>
-        <p style={{ textAlign: 'center' }}>
+    <section id="contact" className="contact-section">
+      <div className="container contact-container">
+        <h2 className="contact-title">Curious? Let's Chat.</h2>
+        <p className="contact-subtitle">
           I started this journey just looking for weight loss. If you have questions about how this can work for you, fill out the form below.
         </p>
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+        <form onSubmit={handleSubmit} className="contact-form">
           <input
             type="text"
             name="name"
@@ -97,7 +97,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
             onChange={handleChange}
             placeholder="Full Name (Required)"
             required
-            style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '5px' }}
+            className="contact-input"
           />
           <input
             type="email"
@@ -106,7 +106,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
             onChange={handleChange}
             placeholder="Email Address (Required)"
             required
-            style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '5px' }}
+            className="contact-input"
           />
           <input
             type="tel"
@@ -114,7 +114,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Phone Number (Optional)"
-            style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '5px' }}
+            className="contact-input"
           />
           
           <label htmlFor="interest">What are you interested in?</label>
@@ -123,7 +123,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
             name="interest"
             value={formData.interest}
             onChange={handleChange}
-            style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '5px' }}
+            className="contact-input"
           >
             {interestOptions.map((option) => (
               <option key={option} value={option}>
@@ -138,38 +138,25 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedPack }) => {
             onChange={handleChange}
             placeholder="Tell me a little about your goals..."
             rows={4}
-            style={{ padding: '15px', border: '1px solid #ccc', borderRadius: '5px' }}
+            className="contact-input"
           />
           
-          <button 
-            type="submit" 
-            className="btn" 
+          <button
+            type="submit"
+            className="btn contact-btn"
             disabled={isSubmitting}
-            style={{ width: '100%' }}
           >
             {isSubmitting ? 'Sending...' : 'Submit Message'}
           </button>
 
           {submitStatus === 'success' && (
-            <div style={{ 
-              padding: '15px', 
-              background: '#d4edda', 
-              color: '#155724', 
-              borderRadius: '5px',
-              textAlign: 'center' 
-            }}>
+            <div className="contact-success">
               Thank you! Your message has been sent successfully.
             </div>
           )}
 
           {submitStatus === 'error' && (
-            <div style={{ 
-              padding: '15px', 
-              background: '#f8d7da', 
-              color: '#721c24', 
-              borderRadius: '5px',
-              textAlign: 'center' 
-            }}>
+            <div className="contact-error">
               Sorry, there was an error sending your message. Please try again.
             </div>
           )}
