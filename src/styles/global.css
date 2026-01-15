@@ -17,19 +17,6 @@
     --shadow-medium: rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-primary: #1a1a1a;
-        --bg-secondary: #242424;
-        --card-bg: #2a2a2a;
-        --text-primary: #e0e0e0;
-        --text-secondary: #b0b0b0;
-        --border-color: #404040;
-        --shadow-light: rgba(0, 0, 0, 0.4);
-        --shadow-medium: rgba(0, 0, 0, 0.6);
-    }
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -220,21 +207,9 @@ img {
     font-size: 1.05rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    .section-subtitle {
-        color: #b0b0b0;
-    }
-}
-
 /* The Comparison (Anti-GLP-1) */
 .comparison {
     background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%);
-}
-
-@media (prefers-color-scheme: dark) {
-    .comparison {
-        background: linear-gradient(to bottom, #1a1a1a 0%, #242424 100%);
-    }
 }
 
 .comparison-grid { 
@@ -259,18 +234,6 @@ img {
         0 0 0 1px rgba(0, 0, 0, 0.08),
         0 10px 30px rgba(0, 0, 0, 0.15),
         0 20px 50px rgba(39, 174, 96, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-    .comp-card {
-        background: linear-gradient(180deg, #2a2a2a 0%, #323232 100%);
-        border: 2px solid rgba(39, 174, 96, 0.3);
-        box-shadow:
-            0 -1px 0 rgba(39, 174, 96, 0.2) inset,
-            0 0 0 1px rgba(0, 0, 0, 0.4),
-            0 10px 30px rgba(0, 0, 0, 0.5),
-            0 20px 50px rgba(0, 0, 0, 0.3);
-    }
 }
 
 .comp-card:hover {
@@ -352,44 +315,6 @@ img {
 
 .benefit-card:nth-child(6) {
     background: linear-gradient(180deg, #d9e9f5 0%, #bcd7eb 100%);
-}
-
-@media (prefers-color-scheme: dark) {
-    .benefit-card:nth-child(1) {
-        background: linear-gradient(180deg, #1f3d2e 0%, #153d2e 100%);
-    }
-
-    .benefit-card:nth-child(2) {
-        background: linear-gradient(180deg, #1d3548 0%, #0f2a3f 100%);
-    }
-
-    .benefit-card:nth-child(3) {
-        background: linear-gradient(180deg, #1e3f35 0%, #0f3530 100%);
-    }
-
-    .benefit-card:nth-child(4) {
-        background: linear-gradient(180deg, #1a3548 0%, #0a2840 100%);
-    }
-
-    .benefit-card:nth-child(5) {
-        background: linear-gradient(180deg, #1f3d3a 0%, #103834 100%);
-    }
-
-    .benefit-card:nth-child(6) {
-        background: linear-gradient(180deg, #1d3548 0%, #0c2a40 100%);
-    }
-
-    .benefit-card {
-        border: 2px solid rgba(39, 174, 96, 0.3);
-    }
-
-    .benefit-card h4 {
-        color: #e0e0e0;
-    }
-
-    .benefit-card p {
-        color: #b0b0b0;
-    }
 }
 
 .benefit-card:hover {
@@ -516,12 +441,6 @@ img {
     background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f5 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-    .pricing {
-        background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
-    }
-}
-
 .pricing-title {
     text-align: center;
     margin-bottom: 40px;
@@ -579,18 +498,6 @@ img {
         0 0 0 1px rgba(0, 0, 0, 0.08),
         0 10px 30px rgba(0, 0, 0, 0.15),
         0 20px 50px rgba(39, 174, 96, 0.12);
-}
-
-@media (prefers-color-scheme: dark) {
-    .price-card {
-        background: linear-gradient(180deg, #2a2a2a 0%, #323232 100%);
-        border: 2px solid rgba(39, 174, 96, 0.3);
-        box-shadow:
-            0 -1px 0 rgba(39, 174, 96, 0.2) inset,
-            0 0 0 1px rgba(0, 0, 0, 0.4),
-            0 10px 30px rgba(0, 0, 0, 0.5),
-            0 20px 50px rgba(0, 0, 0, 0.3);
-    }
 }
 
 .price-card:hover {
@@ -654,17 +561,6 @@ img {
         0 -1px 0 rgba(255, 255, 255, 0.4) inset,
         0 0 0 1px rgba(0, 0, 0, 0.05),
         0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-    .expert-card {
-        background: linear-gradient(180deg, rgba(42, 42, 42, 0.95) 0%, rgba(38, 38, 38, 0.9) 100%);
-        border: 2px solid rgba(39, 174, 96, 0.2);
-        box-shadow:
-            0 -1px 0 rgba(39, 174, 96, 0.15) inset,
-            0 0 0 1px rgba(0, 0, 0, 0.4),
-            0 8px 20px rgba(0, 0, 0, 0.3);
-    }
 }
 
 .expert-card:hover {
@@ -744,18 +640,6 @@ img {
         0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-    .video-link {
-        background: linear-gradient(180deg, #2a2a2a 0%, #323232 100%);
-        border: 2px solid rgba(39, 174, 96, 0.3);
-        color: #e0e0e0;
-        box-shadow:
-            0 -1px 0 rgba(39, 174, 96, 0.2) inset,
-            0 0 0 1px rgba(0, 0, 0, 0.4),
-            0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-}
-
 .video-link:hover {
     transform: translateY(-4px);
     border-color: var(--accent);
@@ -799,12 +683,6 @@ input:focus, select:focus, textarea:focus {
     background: linear-gradient(135deg, #f8f9fa 0%, #f0f3f5 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-    .contact-section {
-        background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
-    }
-}
-
 .contact-container {
     max-width: 600px;
 }
@@ -834,19 +712,6 @@ input:focus, select:focus, textarea:focus {
     color: var(--text-primary);
     transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-}
-
-@media (prefers-color-scheme: dark) {
-    .contact-input {
-        border: 2px solid #404040;
-        background: linear-gradient(180deg, #2a2a2a 0%, #323232 100%);
-        color: #e0e0e0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-
-    .contact-input::placeholder {
-        color: #808080;
-    }
 }
 
 .contact-input:focus {
@@ -949,12 +814,6 @@ h3 {
     background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-    .how-it-works {
-        background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
-    }
-}
-
 .how-it-works-grid {
     display: flex;
     justify-content: space-around;
@@ -977,18 +836,6 @@ h3 {
         0 8px 24px rgba(0, 0, 0, 0.12),
         0 16px 40px rgba(39, 174, 96, 0.08);
     transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@media (prefers-color-scheme: dark) {
-    .how-it-works-card {
-        background: linear-gradient(180deg, rgba(42, 42, 42, 0.95) 0%, rgba(38, 38, 38, 0.95) 100%);
-        border: 2px solid rgba(39, 174, 96, 0.2);
-        box-shadow:
-            0 -1px 0 rgba(39, 174, 96, 0.15) inset,
-            0 0 0 1px rgba(0, 0, 0, 0.4),
-            0 8px 24px rgba(0, 0, 0, 0.3),
-            0 16px 40px rgba(0, 0, 0, 0.2);
-    }
 }
 
 .how-it-works-card:hover {
@@ -1023,12 +870,6 @@ h3 {
 /* Video Section */
 .video-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-}
-
-@media (prefers-color-scheme: dark) {
-    .video-section {
-        background: linear-gradient(135deg, #1a1a1a 0%, #242424 100%);
-    }
 }
 
 .video-section h2 {
