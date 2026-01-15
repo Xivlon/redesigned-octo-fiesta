@@ -61,6 +61,10 @@ const Story: React.FC = () => {
                 {galleryImages.map((_, index) => (
                   <div
                     key={index}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`Go to slide ${index + 1}`}
+                    aria-current={index === currentImageIndex ? 'true' : 'false'}
                     style={{
                       width: '10px',
                       height: '10px',
@@ -70,6 +74,12 @@ const Story: React.FC = () => {
                       cursor: 'pointer'
                     }}
                     onClick={() => setCurrentImageIndex(index)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setCurrentImageIndex(index);
+                      }
+                    }}
                   />
                 ))}
               </div>
