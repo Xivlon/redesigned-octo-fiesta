@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Video: React.FC = () => {
   return (
     <section className="video-section">
