@@ -20,6 +20,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
   currentPrice,
   description,
   features,
+  isBestValue,
   onSelect,
 }) => {
   return (
