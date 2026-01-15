@@ -255,7 +255,7 @@ img {
     border-radius: 15px; 
     display: flex; 
     flex-direction: column; 
-    height: 80%;
+    height: 90%;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -317,7 +317,7 @@ img {
 
 .expert-card img { 
     width: 150px; 
-    height: 150px; 
+    height: 130px; 
     border-radius: 50%; 
     object-fit: cover; 
     margin: 0 auto 20px auto; 
