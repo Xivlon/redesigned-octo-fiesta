@@ -14,6 +14,12 @@ const Experts: React.FC = () => {
             />
             <h3>Peter Greenlaw</h3>
             <p>Co-Founder & Creator<br />Transformation Coach & Nutrition Educator</p>
+            <a
+            href="https://thegreenlawreport.com/"
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ color: 'var(--accent)', fontSize: '0.9em' }}
+            >
           </div>
           <div className="expert-card">
             <img 
