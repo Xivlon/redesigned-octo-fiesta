@@ -63,13 +63,13 @@ const PriceCard: React.FC<PriceCardProps> = ({
 
 const Pricing: React.FC = () => {
   const handleSelectBasic = () => {
-    // This will be connected to order processing
-    console.log('Basic pack selected');
+    // TODO: Implement order processing
+    alert('Basic Wellness Pack selected. Order processing to be implemented.');
   };
 
   const handleSelectPremium = () => {
-    // This will be connected to order processing
-    console.log('Premium pack selected');
+    // TODO: Implement order processing
+    alert('Premium Reset Pack selected. Order processing to be implemented.');
   };
 
   return (

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <p>
           Always consult with a qualified healthcare professional before starting any nutritional or wellness program, especially if you have a medical condition or are taking medication.
         </p>
-        <p>&copy; 2026 R2M Protocol. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} R2M Protocol. All rights reserved.</p>
       </div>
     </footer>
   );
