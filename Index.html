@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The R2M Protocol | Restore. Reshape. Rebuild.</title>
+    <style>
+        :root {
+            --primary: #2C3E50; /* Dark Blue */
+            --accent: #27ae60; /* Fresh Green */
+            --light: #ecf0f1;
+            --text: #333;
+            --white: #ffffff;
+        }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        
+        /* Layout Utilities */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .btn { display: inline-block; background: var(--accent); color: var(--white); padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #219150; }
+        section { padding: 60px 0; }
+        
+        /* Hero Section */
+        .hero { background: var(--primary); color: var(--white); text-align: center; padding: 80px 20px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px auto; }
+        
+        /* The Comparison (Anti-GLP-1) */
+        .comparison { background: #f9f9f9; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .comp-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .comp-card.natural { border-top: 5px solid var(--accent); }
+        .comp-card.synthetic { border-top: 5px solid #c0392b; opacity: 0.8; }
+        
+        /* The Story */
+        .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .story-img img { width: 100%; border-radius: 8px; }
+        .quote { font-style: italic; font-size: 1.1em; color: #555; border-left: 4px solid var(--accent); padding-left: 20px; margin: 20px 0; }
+
+        /* The Pricing */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: center; }
+        .price-card { border: 1px solid #ddd; padding: 30px; border-radius: 10px; }
+        .price-card h3 { color: var(--primary); }
+        .price { font-size: 2em; color: var(--accent); font-weight: bold; }
+        .price span { text-decoration: line-through; color: #999; font-size: 0.6em; }
+        
+        /* Disclaimer */
+        .disclaimer { background: #222; color: #777; font-size: 0.8rem; padding: 40px 0; text-align: center; }
+        
+        @media (max-width: 768px) {
+            .story-grid, .comparison-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <h1>It’s Not Just Weight Loss.<br>It’s Cellular Restoration.</h1>
+            <p>Discover the nutritional protocol that helps you reclaim your vitality without synthetic drugs, injections, or extreme dieting.</p>
+            <a href="#contact" class="btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <h2 style="text-align: center;">Why Feed Your Body Instead of Forcing It?</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">There is a safer way to health than relying on synthetic interventions that silence your body's natural signals.</p>
+            
+            <div class="comparison-grid">
+                <div class="comp-card synthetic">
+                    <h3>The Medical Route</h3>
+                    <p>Many modern weight loss drugs work by paralyzing digestion to suppress appetite.</p>
+                    <ul>
+                        <li>Relies on synthetic mimicry</li>
+                        <li>Risks long-term side effects</li>
+                        <li>"Quiets" the body artificially</li>
+                    </ul>
+                </div>
+
+                <div class="comp-card natural">
+                    <h3>The R2M Protocol</h3>
+                    <p>We believe in flooding the body with the right nutrition so it releases fat naturally.</p>
+                    <ul>
+                        <li>Supports metabolic balance</li>
+                        <li>Based on superfood nutrition</li>
+                        <li>Rebuilds the body from within</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text">
+                    <h2>I Came for Weight Loss. I Found My Life Again.</h2>
+                    <p>Fifteen years ago, a severe spinal injury changed everything. For over a decade, I lived with constant discomfort and imbalance. My body was stuck in a cycle of inflammation.</p>
+                    <div class="quote">
+                        "I didn't start this protocol to heal everything—I simply gave my body what it had been missing. But the results surprised me."
+                    </div>
+                    <p>In just 30 days, I released 16 pounds. But more importantly, I felt a shift. My energy returned, my daily comfort levels improved dramatically, and I finally felt like myself again.</p>
+                    <p><strong>Start:</strong> Dec 1, 2025 | <strong>Current:</strong> Dec 31, 2025</p>
+                </div>
+                <div class="story-img">
+                    <img src="path-to-your-image.jpg" alt="Transformation Results" style="background:#eee; height: 300px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: white;">
+        <div class="container">
+            <h2 style="text-align: center;">How It Works</h2>
+            <p style="text-align: center;">A 30-Day Nutritional Blueprint.</p>
+            <br>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px; padding: 20px;">
+                    <h3>Daily Nutrition</h3>
+                    <p>Replace breakfast with a nutrient-dense superfood shake. Enjoy a balanced dinner. Flood your body with enzymes.</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 20px;">
+                    <h3>Nutritional Fasting</h3>
+                    <p>Two days a month, we support the body's natural cleansing process—not by starving, but by nourishing with targeted botanicals.</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; padding: 20px;">
+                    <h3>Adaptation</h3>
+                    <p>Your body learns to burn fat for fuel naturally, supporting lean muscle and energy without the crash.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" style="background: #f4f4f4;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">Choose Your Wellness Pack</h2>
+            <div class="pricing-grid">
+                <div class="price-card" style="background: white;">
+                    <h3>Basic Wellness Pack</h3>
+                    <div class="price"><span>$222</span> $167</div>
+                    <p>Perfect for getting started.</p>
+                    <ul style="text-align: left; margin: 20px 0;">
+                        <li>Save $55 on this order</li>
+                        <li>Includes 30-day Shake Supply</li>
+                        <li>Cleanse Support</li>
+                        <li>Free Shipping</li>
+                    </ul>
+                    <a href="#" class="btn">Select Basic</a>
+                </div>
+
+                <div class="price-card" style="background: white; border: 2px solid var(--accent); position: relative;">
+                    <div style="background: var(--accent); color: white; position: absolute; top: 0; left: 0; width: 100%; padding: 5px 0; border-radius: 8px 8px 0 0;">Best Value</div>
+                    <br>
+                    <h3>Premium Reset Pack</h3>
+                    <div class="price"><span>$439</span> $330</div>
+                    <p>The complete transformation kit.</p>
+                    <ul style="text-align: left; margin: 20px 0;">
+                        <li>Save $109 on this order</li>
+                        <li>Full Shake & Cleanse Supply</li>
+                        <li>Premium Snacks & Adaptogens</li>
+                        <li>Free Shipping</li>
+                    </ul>
+                    <a href="#" class="btn">Select Premium</a>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #666;">*Prices reflect Subscription Rewards pricing.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" style="max-width: 600px;">
+            <h2 style="text-align: center;">Curious? Let's Chat.</h2>
+            <p style="text-align: center;">I started this journey just looking for weight loss. If you have questions about how this can work for you, fill out the form below.</p>
+            <form style="display: flex; flex-direction: column; gap: 15px;">
+                <input type="text" placeholder="Full Name (Required)" style="padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="email" placeholder="Email Address (Required)" style="padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="tel" placeholder="Phone Number (Optional)" style="padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                
+                <label>What are you interested in?</label>
+                <select style="padding: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                    <option>Weight Loss</option>
+                    <option>Nutritional Protocol Details</option>
+                    <option>Menopause Support</option>
+                    <option>General Questions</option>
+                </select>
+
+                <textarea placeholder="Tell me a little about your goals..." rows="4" style="padding: 15px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+                
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Submit Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="disclaimer">
+        <div class="container">
+            <p><strong>MEDICAL DISCLAIMER:</strong> The information shared on this website reflects personal experience and is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary.</p>
+            <p>Always consult with a qualified healthcare professional before starting any nutritional or wellness program, especially if you have a medical condition or are taking medication.</p>
+            <p>&copy; 2026 R2M Protocol. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
