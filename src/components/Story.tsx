@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const Story: React.FC = () => {
-  const galleryImages = [
-    '/gallery/transform.png',
-    '/gallery/spine.png',
-    '/gallery/spine2.png',
-    '/gallery/Screenshot 2026-01-15 at 17-36-47 My Landing Page.pdf.png'
-  ];
+const galleryImages = [
+  '/gallery/transform.png',
+  '/gallery/spine.png',
+  '/gallery/spine2.png',
+  '/gallery/Screenshot 2026-01-15 at 17-36-47 My Landing Page.pdf.png'
+];
 
+const Story: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
