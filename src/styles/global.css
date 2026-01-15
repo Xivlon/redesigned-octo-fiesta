@@ -4,6 +4,7 @@
     --light: #ecf0f1;
     --text: #333;
     --white: #ffffff;
+    --gray: #ccc;
     --gradient-1: linear-gradient(135deg, #2C3E50 0%, #34495e 100%);
     --gradient-2: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
 }
@@ -250,7 +251,7 @@ img {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #ccc;
+    background: var(--gray);
     transition: background 0.3s ease;
     cursor: pointer;
 }
